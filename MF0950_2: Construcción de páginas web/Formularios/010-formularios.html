@@ -1,0 +1,91 @@
+Contenidos de Formularios Web
+1. Entradas de Texto
+Las entradas de texto son campos donde el usuario puede introducir datos de varios tipos. Los principales tipos de entradas de texto son:
+
+Texto Simple:
+
+  
+ 
+<label for="nombre">Nombre:</label>
+<input type="text" id="nombre" name="nombre">
+Contraseña:
+
+  
+ 
+<label for="password">Contraseña:</label>
+<input type="password" id="password" name="password">
+
+
+Correo Electrónico:
+
+  
+ 
+<label for="email">Email:</label>
+<input type="email" id="email" name="email">
+
+
+
+Casilla de Verificación:
+
+   
+   
+<label for="suscripcion">Suscribirse:</label>
+<input type="checkbox" id="suscripcion" name="suscripcion">
+Botón de Radio:
+
+   
+   
+<fieldset>
+  <legend>Género:</legend>
+  <label for="hombre">Hombre</label>
+  <input type="radio" id="hombre" name="genero" value="hombre">
+  <label for="mujer">Mujer</label>
+  <input type="radio" id="mujer" name="genero" value="mujer">
+</fieldset>
+Menú Desplegable:
+
+   
+   
+<label for="pais">País:</label>
+<select id="pais" name="pais">
+  <option value="mx">México</option>
+  <option value="us">Estados Unidos</option>
+  <option value="ca">Canadá</option>
+</select>
+
+
+
+
+
+Entradas de Archivo
+Permiten a los usuarios subir archivos desde sus dispositivos.
+
+    
+    
+<label for="archivo">Subir archivo:</label>
+<input type="file" id="archivo" name="archivo">
+4. Botones
+Los botones ejecutan acciones específicas cuando se hacen clic.
+
+Enviar Formulario:
+
+    
+    
+<input type="submit" value="Enviar">
+Reiniciar Formulario:
+
+    
+    
+<input type="reset" value="Reiniciar">
+Botón General:
+
+    
+    
+<button type="button" onclick="alert('Botón clicado!')">Haz clic</button>
+5. Áreas de Texto
+Las áreas de texto permiten a los usuarios introducir grandes cantidades de texto.
+
+    
+    
+<label for="comentarios">Comentarios:</label>
+<textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>

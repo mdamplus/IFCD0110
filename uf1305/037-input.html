@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento input</title>
+</head>
+<body>
+
+<label for="usuario">Usuario:</label>
+<input type="text" id="usuario" name="usuario">
+<p id="contador">Caracteres: 0</p>
+
+<script>
+    var campoUsuario = document.getElementById("usuario");
+    var contador = document.getElementById("contador");
+
+    campoUsuario.addEventListener("input", function() {
+        contador.textContent = "Caracteres: " + campoUsuario.value.length;
+    });
+</script>
+
+</body>
+</html>

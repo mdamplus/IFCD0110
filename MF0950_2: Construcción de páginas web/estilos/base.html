@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de CSS y Seudoclases</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Estilos avanzados */
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .flex-item {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1;
+            margin: 10px;
+            text-align: center;
+        }
+
+        /* Seudoclases */
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: #003f7f;
+        }
+
+        input:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        input:disabled {
+            background-color: #e9ecef;
+            color: #6c757d;
+        }
+
+        /* Pseudoelementos */
+        p::first-line {
+            font-weight: bold;
+            color: #333;
+        }
+
+        p::first-letter {
+            font-size: 2em;
+            color: #007bff;
+        }
+
+        /* Seudoclases estructurales */
+        ul li:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        ul li:nth-child(even) {
+            background-color: #e9ecef;
+        }
+
+        ul li:nth-child(3) {
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ejemplos de CSS y Seudoclases</h1>
+        <p>Este es un ejemplo de cómo usar CSS para estilizar elementos HTML y aplicar seudoclases.</p>
+    </div>
+
+    <div class="container">
+        <h2>Estilos Avanzados</h2>
+        <div class="flex-container">
+            <div class="flex-item">Elemento Flex 1</div>
+            <div class="flex-item">Elemento Flex 2</div>
+            <div class="flex-item">Elemento Flex 3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Seudoclases</h2>
+        <p><a href="#">Este es un enlace con estilos de seudoclases</a></p>
+        <p>
+            <input type="text" placeholder="Focus me" />
+            <input type="text" placeholder="Disabled" disabled />
+        </p>
+    </div>
+
+    <div class="container">
+        <h2>Pseudoelementos</h2>
+        <p>Este es un párrafo con estilos aplicados a la primera línea y la primera letra. Observe cómo la primera línea es diferente.</p>
+    </div>
+
+    <div class="container">
+        <h2>Seudoclases Estructurales</h2>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>Elemento 5</li>
+        </ul>
+    </div>
+</body>
+</html>

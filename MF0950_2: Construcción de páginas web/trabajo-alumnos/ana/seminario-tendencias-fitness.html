@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tendencias en la industria del fitness y la moda deportiva</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .logo {
+            width: 100px;
+        }
+        .caja {
+            background: white;
+        }
+        .menu {
+            position: absolute;
+            right: 0;
+            left: 0;
+            align-items: center;
+            justify-content: space-between;
+            background: red;
+        }
+        .menu .navbar ul li {
+            position: relative;
+            float: left;
+            padding: 20px;
+        }
+        #menu {
+            display: none;
+        }
+        
+        .cja {
+            margin-top: 100px;
+            display: flex;
+        }
+        .box {
+            margin: 5%;
+            color: #4949a0;
+            border: 2px solid #4949a0;
+        }
+        .left {
+            width: 65%;
+        }
+        .right {
+            width: 15%;
+        }
+        p {
+            font-size: larger;
+        }
+        .publi {
+            width: 100%;
+        }
+        h6 {
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div class="caja">
+        <img class="logo" src="svg/blog/sport-pro.svg" alt="logo sport pro">
+        <!--Los telefonos y el correo es inventado, pero quería mostrar que sabía ponerlo-->
+        <a href="mailto:rrhh@noexiste.org">Correo</a>
+        <a href="tel:+34XXXXXXXXX">Teléfono</a>
+        <a href="https://wa.me/+34XXXXXXXXX">Whatsapp</a>
+    </div>
+    <!--Todavía no hie el menú con css pero así tengo ya la estructura para luego-->
+    <div class="menu">
+        <input type="checkbox"  id="menu">
+        <label for="menu">x</label>
+        <nav class="navbar">
+            <ul>
+                <!--pongo # mientras esté vacío, como no hay más páginas se queda así-->
+                <li><a href="#">Conócenos</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Trabaja con nosotros</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="cja">
+        <div class="box left">
+            <h1>Seminario "Tendencias en la industria del fitness y la moda deportiva"</h1>
+            <br>
+            <p>Estadio La Rosaleda. P.º Martiricos, s/n, Palma-Palmilla, 29011 Málaga</p>
+            <br>
+            <p>Una excelente oportunidad para explorar las últimas innovaciones
+                y cambios en estos campos tan dinámicos. Los asistentes podrán
+                conocer las nuevas tecnologías, materiales y diseños que están
+                revolucionando la forma en que nos mantenemos activos y nos
+                vestimos para hacer ejercicio. Además, se discutirán las tendencias
+                actuales en cuanto a estilo, funcionalidad y sostenibilidad en la moda
+                deportiva, así como las estrategias de marketing y ventas más
+                efectivas en laindustria del fitness. ¡Un evento imperdible
+                para todos los apasionados por el deporte y la moda!</p>
+            <img src="img/fit.jpg" alt="Fitness" title="Fitness" width="100%">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6395.081913078835!2d-4.429226924087489!3d36.73358447145177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7b04fcb2363%3A0x69f9e825cde5bd60!2sEstadio%20La%20Rosaleda!5e0!3m2!1ses!2ses!4v1715938034671!5m2!1ses!2ses" width="100%" height="450"></iframe>
+            <div>
+                <h2>Contactos</h2>
+                <div>
+                    <a href="mailto:rrhh@noexiste.org">Correo</a>
+                    <a href="tel:+34XXXXXXXXX">Teléfono</a>
+                    <a href="https://wa.me/+34XXXXXXXXX">Whatsapp</a>
+                </div>
+            </div>
+        </div>
+        <div class="box right">
+            <!--otros eventos-->
+            <h2>Eventos</h2>
+            <ul>
+                <li><a href="#">Campeonato de padel</a></li>
+                <br>
+                <li><a href="#">Conferencia sobre la importancia de una buena alimentación</a></li>
+                <br>
+                <li><a href="#">Carrera solidaria</a></li>
+            </ul>
+            <!--publi-->
+            <img class="publi" src="img/zapatillas.jpg" alt="Anuncio zapatillas" title="Zapatillas deportivas">
+            <!--sobre mi-->
+            <h2>Sobre mí</h2>
+            <p>Licenciada en la University of Massachusetts, en periodismo deportivo. Organizadora de eventos a tiempo parcial, bombera, nutriologa y presidenta de los Estados Unidos de América (U.S.A)</p>
+        </div>
+    </div>
+    <footer>
+        <h6>&copy;Todos los derechos reservados</h6>
+    </footer>
+    <!--No es mi mejor trabajo, pero mejor que nada-->
+</body>
+</html>

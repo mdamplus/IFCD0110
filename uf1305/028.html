@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <script>
+        function calcular() {
+            let a = 5;
+            let b = 10;
+            let c = a + b;
+
+            if (c > 15) {
+                document.getElementById("resultado").innerHTML = "La suma es mayor que 15";
+            } else if (c < 15) {
+                document.getElementById("resultado").innerHTML = "La suma es menor que 15";
+            } else {
+                document.getElementById("resultado").innerHTML = "La suma es igual a 15";
+            }
+        }
+    </script>
+</head>
+<body onload="calcular()">
+    <div id="resultado"></div>
+</body>
+</html>

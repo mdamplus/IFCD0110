@@ -1,0 +1,29 @@
+/*Rojo Puro */
+.rojo {
+    color: hsl(0, 100%, 50%); 
+}
+
+/* Verde Puro */
+.verde { 
+    color: hsl(120, 100%, 50%);
+}
+
+/* Azul Puro */
+.azul {
+    color: hsl(240, 100%, 50%);
+}
+
+/* Gris (sin saturación) */
+.gris{
+    color: hsl(0, 0%, 50%);
+}
+
+/* Rosa Claro */
+.rosa {
+    color: hsl(330, 100%, 70%);
+}
+
+/* Naranja */
+.naranja{
+    color: hsl(30, 100%, 50%);
+}

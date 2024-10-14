@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento onmouseout</title>
+</head>
+<body>
+
+<p id="textoMouseout">Pasa el ratón por encima de este texto y luego sácalo.</p>
+
+<script>
+    document.getElementById("textoMouseout").onmouseout = function() {
+        this.style.color = "red";
+    };
+</script>
+
+</body>
+</html>

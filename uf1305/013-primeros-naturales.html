@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Suma de los Primeros N Números Naturales</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <p>Tienes que mirar el resultado en la consola del navegador.</p>
+    <script>
+        function sumaPrimerosNNaturales(n) {
+            // Usar la fórmula para la suma de los primeros N números naturales
+            return (n * (n + 1)) / 2;
+        }
+
+        // Leer el valor de N del usuario
+        let n = parseInt(prompt("Introduce el valor de N:"));
+
+        // Calcular la suma
+        let suma = sumaPrimerosNNaturales(n);
+
+        // Imprimir el resultado en la consola
+        console.log("La suma de los primeros", n, "números naturales es:", suma);
+    </script>
+</body>
+</html>

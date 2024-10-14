@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento de Teclado</title>
+</head>
+<body>
+    <input type="text" id="miInput" placeholder="Escribe algo...">
+    <script>
+        // Obtener el elemento input
+        const input = document.getElementById('miInput');
+        
+        // Definir el manejador de eventos para la pulsación de una tecla
+        function manejarTecla(evento) {
+            console.log('Tecla presionada:', evento.key); // Muestra la tecla presionada en la consola
+        }
+
+        // Registrar el manejador de eventos para el evento de teclado
+        input.addEventListener('keydown', manejarTecla);
+    </script>
+</body>
+</html>

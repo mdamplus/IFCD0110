@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Columnas con Diferente Ancho en CSS Grid</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr; /* Una columna es el doble de ancha que la otra */
+            gap: 10px; /* Espacio entre columnas */
+        }
+
+        .grid-item {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">Columna 1</div>
+        <div class="grid-item">Columna 2</div>
+        <div class="grid-item">Columna 3</div>
+        <div class="grid-item">Columna 4</div>
+    </div>
+</body>
+</html>

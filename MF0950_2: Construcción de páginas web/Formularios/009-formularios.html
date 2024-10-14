@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Formulario de Registro</title>
+  <style>
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    
+    legend {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <form action="/submit-registration" method="post">
+    <fieldset>
+      <legend>Género</legend>
+      
+      <label for="hombre">Hombre</label>
+      <input type="radio" id="hombre" name="genero" value="hombre">
+      <br>
+      
+      <label for="mujer">Mujer</label>
+      <input type="radio" id="mujer" name="genero" value="mujer">
+      <br>
+      
+      <label for="otro">Otro</label>
+      <input type="radio" id="otro" name="genero" value="otro">
+    </fieldset>
+    
+    <br>
+    
+    <button type="submit">Registrar</button>
+  </form>
+</body>
+</html>

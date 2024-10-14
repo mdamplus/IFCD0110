@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar tamaño de SVG con scroll</title>
+    <style>
+        body {
+            height: 2000px; /* Altura grande para permitir el desplazamiento */
+        }
+        svg {
+            padding-top:400px;
+            width: 100px;
+            height: 100px;
+            transition: width 0.3s, height 0.3s; /* Transición suave */
+        }
+    </style>
+</head>
+<body>
+
+<!-- SVG de ejemplo -->
+<svg id="svgImagen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="5" fill="none"/>
+</svg>
+
+<script>
+    window.onscroll = function() {
+        // Obtener la cantidad de scroll vertical
+        let scrollY = window.scrollY;
+
+        // Calcular un nuevo tamaño para el SVG basado en el scroll
+        let nuevoTamaño = 100 + scrollY / 5;
+
+        // Limitar el tamaño mínimo y máximo del SVG
+        if (nuevoTamaño > 300) {
+            nuevoTamaño = 300; // Tamaño máximo
+        } else if (nuevoTamaño < 50) {
+            nuevoTamaño = 50; // Tamaño mínimo
+        }
+
+        // Aplicar el nuevo tamaño al SVG
+        document.getElementById("svgImagen").style.width = nuevoTamaño + "px";
+        document.getElementById("svgImagen").style.height = nuevoTamaño + "px";
+    };
+</script>
+
+</body>
+</html>

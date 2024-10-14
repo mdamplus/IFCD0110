@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de CSS Grid</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: /*repeat(3, 1fr);*/ /*repeat(4,1fr); */ 1fr 4fr 1fr 4fr 2fr;
+            gap: 10px;
+            height: 50vh;
+        }
+
+        .grid-item {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .azul{background-color: blue;}
+        .rojo{background-color: red;}
+        .verde{background-color: green;}
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item azul">Item 1</div>
+        <div class="grid-item rojo">Item 2</div>
+        <div class="grid-item verde">Item 3</div>
+        <div class="grid-item verde">Item 4XXX</div>
+        <div class="grid-item verde">Item 5</div>
+        <div class="grid-item verde">Item 6</div>
+        <div class="grid-item">Item 7</div>
+        <div class="grid-item">Item 8</div>
+        <div class="grid-item">Item 9</div>
+    </div>
+</body>
+</html>
+
+
+
+
+Nombre: Nicola Prete
+Italian identity card nº:  CA93017OQ
+E-mail: nicolaedavide@gmail.com

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento onbeforeunload</title>
+</head>
+<body>
+
+<p>Intenta cerrar o recargar esta página.</p>
+
+<script>
+    window.onbeforeunload = function(event) {
+        // La cadena personalizada no se mostrará, pero la confirmación se activará
+        event.preventDefault();
+        event.returnValue = ''; // Establecer esto activa el mensaje de confirmación
+    };
+</script>
+
+</body>
+</html>

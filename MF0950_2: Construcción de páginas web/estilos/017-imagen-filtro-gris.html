@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen en Blanco y Negro</title>
+    <style>
+        .bw-image {
+            filter: grayscale(20%);
+        }
+
+        .image-container {
+            position: relative;
+            display: inline-block;
+            width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+        }
+        .image-container img {
+            display: block;
+            width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+            height: auto; /* Mantiene la proporción de la imagen */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="grupo.jpeg" alt="Imagen en blanco y negro" class="bw-image">
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de onmouseover y cambio de texto</title>
+    <style>
+        .cambio-color {
+            color: black;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+<h1 class="cambio-color" onmouseover="cambiarColorYTexto(this)" onmouseout="restaurarColorYTexto(this)">
+    Pasa el ratón por aquí
+</h1>
+
+<script>
+    function cambiarColorYTexto(elemento) {
+        elemento.style.color = "blue";
+        elemento.innerHTML = "El ratón está sobre mí";
+    }
+
+    function restaurarColorYTexto(elemento) {
+        elemento.style.color = "black";
+        elemento.innerHTML = "Pasa el ratón por aquí";
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento onscroll</title>
+    <style>
+        body {
+            height: 2000px; /* Para habilitar el desplazamiento */
+        }
+    </style>
+</head>
+<body>
+
+<p id="scrollPosicion">Desplázate por la página para ver la posición del scroll.</p>
+
+<script>
+    window.onscroll = function() {
+        document.getElementById("scrollPosicion").innerHTML = 
+            "Posición de scroll: " + window.scrollY + "px";
+    };
+</script>
+
+</body>
+</html>

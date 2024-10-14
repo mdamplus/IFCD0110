@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>obtener coordenadas</title>
+</head>
+<body>
+    <img id="image" src="imagen.png" alt="shapes" onclick="getCoordinates(event)" style="position:relative;">
+
+    <script>
+        function getCoordinates(event) {
+            
+            const x = event.clientX;
+            const y = event.clientY;
+            alert("X: " + x + " Y: " + y);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saturar Imagen a Rojo</title>
+    <style>
+        .saturate-red-image {
+            filter: saturate(2) hue-rotate(-50deg);
+        }
+
+        .image-container {
+            position: relative;
+            display: inline-block;
+            width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+        }
+        .image-container img {
+            display: block;
+            width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+            height: auto; /* Mantiene la proporción de la imagen */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="grupo.jpeg" alt="Imagen saturada a rojo" class="saturate-red-image">
+    </div>
+</body>
+</html>

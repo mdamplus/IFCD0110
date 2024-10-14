@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #4949a0;
+            color: white;
+        }
+        #intro {
+            text-align: center;
+        }
+        #titulo {
+            margin: auto auto;
+            width: 500px;
+            padding: 20px;
+            color: #4949a0;
+            background-color: white;
+            border-radius: 20px;
+            border:3px solid #ff9500;
+        }
+        hr {
+            border: 1px solid white;
+        }
+        .tabla {
+            width: 450px;
+            text-align: center;
+            align-items: center;
+        }
+        .primera {
+            margin-left: 8%;
+            float: left;
+        }
+        .segunda {
+            margin-right: 8%;
+            float: right;
+        }
+        .subtitulo {
+            padding: 25px;
+            color: #4949a0;
+            background-color: #ff9500;
+            border-radius: 20px;
+            border:3px solid white;
+        }
+        .tarea {
+            display: flex;
+        }
+        .celda {
+            color: #5f5f9e;
+            height: 100px;
+        }
+        .habito {
+            width: 350px;
+            background-color: white;
+            border:3px solid #ff9500;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        strong {
+            color: #4949a0;
+        }
+        /*Soy consciente de que la imagen tiene un borde y un espacio,
+        por eso esta el box-shadow separado, pero me gusta como queda,
+        no es un error, pero lo corrigo si prefieres*/
+        .img {
+            height: 100px;
+            border-radius: 50%;
+            margin-left: 10px;
+            margin-right: 10px;
+            box-shadow: 0px 0px 5px 5px #ff9500;
+        }
+        .foto {
+            height: 100px;
+        }
+        .linea {
+            border-left: 2px solid white;
+            height: 825px;
+            left: 50%;
+            position: absolute;
+        }
+    </style>
+    <title>Higiene personal</title>
+</head>
+<body>
+    <!--No soy de poner comentarios, pero puse algunos para que te fuese más fácil de entender, por si piensas que son de chatgpt-->
+    <!--Descripción inicial-->
+    <div id="intro">
+        <h1 id="titulo">Higiene personal</h1>
+        <br>
+        <div>
+            El objetivo de la higiene es prevenir enfermedades,
+            <br/>
+            para mantener o mejorar la salud.
+            <br/>
+            También evitamos perjudicar a otras personas.
+        </div>
+    </div>
+    <hr/>
+    <div>
+        <div class="tabla primera">
+            <!--Habitos-->
+            <div>
+                <h2 class="subtitulo">Hábitos</h2>
+            </div>
+            <div class="tarea">
+                <div class="celda habito">
+                    <p><strong>Ducharse</strong>&nbsp;como mínimo una vez al día, sobretodo tras hacer ejercicio.</p>
+                </div>
+                <div class="celda img"><img class="foto" src="img/ducha.png" alt="Ducha"></div>
+            </div>
+            <br>
+            <div class="tarea">
+                <div class="celda img"><img class="foto" src="img/cepillo.png" alt="Cepillo de dientes"></div>
+                <div class="celda habito">
+                    <p><strong>Lavarse los dientes</strong>&nbsp;después de cada comida, mínimo 3 veces al día.</p>
+                </div>
+            </div>
+            <br>
+            <div class="tarea">
+                <div class="celda habito">
+                    <p><strong>Lavarse las manos</strong>&nbsp;al ensuciarse, antes y después de comer.</p>
+                </div>
+                <div class="celda img"><img class="foto" src="img/mano.png" alt="Lavarse las manos"></div>
+            </div>
+            <br>
+            <div class="tarea">
+                <div class="celda img"><img class="foto" src="img/camiseta.png" alt="Ropa Limpia"></div>
+                <div class="celda habito">
+                    <p><strong>Lavar la ropa</strong>&nbsp;y ponerse ropa nueva todos los días.</p>
+                </div>
+            </div>
+            <br>
+            <div class="tarea">
+                <div class="celda habito">
+                    <p><strong>Usar pañuelos</strong>&nbsp;(o mascarilla en ciertos casos) ante resfriados/estornudos.</p>
+                </div>
+                <div class="celda img"><img class="foto" src="img/pañuelos.png" alt="Usar pañuelos"></div>
+            </div>
+            <br>
+            <div class="tarea">
+                <div class="celda img"><img class="foto" src="img/wc.png" alt="Ir al baño"></div>
+                <div class="celda habito">`
+                    <p><strong>Ir al servicio</strong> si se tienen gases u otras necesidades.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="linea"></div>
+        <div class="tabla segunda">
+            <!--Beneficios-->
+            <div>
+                <h2 class="subtitulo">Beneficios</h2>
+            </div>
+            <div class="tarea">
+                <div class="celda habito">
+                    <p><strong>Dar buena imagen</strong><br>La imagen que das ayuda en el ambito social, sobretodo para una primera impresión.</p>
+                </div>
+                <div class="celda img"><img class="foto" src="img/social.png" alt="Dar buena imagen"></div>
+            </div>
+            <br>
+            <div class="tarea">
+                <div class="celda img"><img class="foto" src="img/sano.png" alt="Buena salud"></div>
+                <div class="celda habito">
+                    <p><strong>Salud</strong><br>Mejora la salud tanto anímica (depresión, ansiedad), como de forma física (prevenir virus)</p>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <!--Neceser-->
+            <div>
+                <h2 class="subtitulo">Neceser</h2>
+            </div>
+            <div class="tarea">
+                <div class="celda habito">
+                    <p>Pañuelos, desodorante, colonia, toallitas, gel hidroalcohólico (compresas y/o tapones)</p>
+                </div>
+                <div class="celda img"><img class="foto" src="img/neceser.png" alt="Dar buena imagen"></div>
+            </div>
+            <br>
+        </div>
+    </div>
+
+</body>
+</html>

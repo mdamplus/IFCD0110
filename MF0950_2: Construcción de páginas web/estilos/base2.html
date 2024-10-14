@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Completo de CSS y Seudoclases</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Pseudoelementos */
+        p::first-line {
+            font-weight: bold;
+            color: #333;
+        }
+
+        p::first-letter {
+            font-size: 2em;
+            color: #007bff;
+        }
+
+        p::before {
+            content: "↠ ";
+            color: #007bff;
+        }
+
+        p::after {
+            content: " ↞";
+            color: #007bff;
+        }
+
+        /* Seudoclases */
+        a:link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #551a8b;
+        }
+
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: #003f7f;
+        }
+
+        input:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        input:disabled {
+            background-color: #e9ecef;
+            color: #6c757d;
+        }
+
+        input:checked {
+            outline: 2px solid #007bff;
+        }
+
+        input:required {
+            border-color: #007bff;
+        }
+
+        input:invalid {
+            border-color: #dc3545;
+        }
+
+        .target:target {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        ul li:first-child {
+            color: #007bff;
+        }
+
+        ul li:last-child {
+            color: #28a745;
+        }
+
+        ul li:only-child {
+            color: #ffc107;
+        }
+
+        ul li:nth-child(2) {
+            color: #17a2b8;
+        }
+
+        ul li:nth-last-child(2) {
+            color: #6f42c1;
+        }
+
+        ul li:first-of-type {
+            font-weight: bold;
+        }
+
+        ul li:last-of-type {
+            font-style: italic;
+        }
+
+        ul li:only-of-type {
+            text-transform: uppercase;
+        }
+
+        input:enabled {
+            border: 1px solid #007bff;
+        }
+
+        input:read-only {
+            background-color: #e9ecef;
+        }
+
+        div:lang(es) {
+            font-style: italic;
+        }
+
+        .container:empty {
+            display: none;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        /* Estilos avanzados */
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .flex-item {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .grid-item {
+            background-color: #28a745;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .text-overflow {
+            width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .text-clip {
+            width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: clip;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ejemplo Completo de CSS y Seudoclases</h1>
+        <p>Este es un párrafo con estilos aplicados a la primera línea, la primera letra, antes y después del contenido.</p>
+    </div>
+
+    <div class="container">
+        <h2>Enlaces con Seudoclases</h2>
+        <p><a href="#">Este es un enlace con estilos de seudoclases</a></p>
+        <p><a href="#target-section">Ir a la sección objetivo</a></p>
+    </div>
+
+    <div class="container">
+        <h2>Formularios y Seudoclases</h2>
+        <p>
+            <input type="text" placeholder="Focus me" />
+            <input type="text" placeholder="Disabled" disabled />
+            <input type="checkbox" checked />
+            <input type="text" required />
+            <input type="text" pattern="\d*" placeholder="Solo números" />
+        </p>
+    </div>
+
+    <div class="container">
+        <h2>Seudoclases Estructurales</h2>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>Elemento 5</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>Seudoclases y Pseudoelementos Adicionales</h2>
+        <p class="target" id="target-section">Este es un elemento objetivo.</p>
+        <div lang="es">Este div está en español.</div>
+        <div class="container"></div>
+    </div>
+
+    <div class="container">
+        <h2>Diseño con Flexbox</h2>
+        <div class="flex-container">
+            <div class="flex-item">Elemento Flex 1</div>
+            <div class="flex-item">Elemento Flex 2</div>
+            <div class="flex-item">Elemento Flex 3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Diseño con Grid</h2>
+        <div class="grid-container">
+            <div class="grid-item">Elemento Grid 1</div>
+            <div class="grid-item">Elemento Grid 2</div>
+            <div class="grid-item">Elemento Grid 3</div>
+            <div class="grid-item">Elemento Grid 4</div>
+            <div class="grid-item">Elemento Grid 5</div>
+            <div class="grid-item">Elemento Grid 6</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Text Overflow</h2>
+        <div class="text-overflow">Este es un texto que se desbordará y será recortado con puntos suspensivos...</div>
+        <div class="text-clip">Este es un texto que se desbordará y será recortado...</div>
+    </div>
+</body>
+</html>

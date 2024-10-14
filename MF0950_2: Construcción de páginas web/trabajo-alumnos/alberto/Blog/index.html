@@ -1,0 +1,218 @@
+<html>
+    <head>
+        <title>BLOG</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            /* Este es el BODY */
+            body {
+                background-image: url("imgs/bg4.jpg");
+            }
+            /* Comienzo, este es el primer DIV grande englobando logo y las redes sociales */
+            #principio {
+                margin: 0 auto;
+                width: 98%;
+                height: 155px;
+                border: 4px solid black;
+                box-shadow: 0px 0px 10px black;
+                background-color: #71c1fd;
+            }
+            /* Aquí está el logo */
+            .logo {
+                float: left;
+                margin-left: 132px;
+            }
+            /* DIV que incluye el H1, es literalmente el encabezado */
+            .encabezado {
+                width: 54%;
+                margin-top: 60px;
+                margin-left: 440px;
+                font-size: 20px;
+            }
+            /* Nombre del evento */
+            #nombre {
+                text-align: center;
+            }
+            /* es el <p> de Contacto */
+            .contact{
+
+            }
+            /* Contacto: */
+            #contacto {
+                float: right;
+                margin-top: -103px;
+                border: 2px solid black;
+                border-radius: 20px;
+                background-color: springgreen;
+                margin-right: 48px;
+            }
+            /* DIV grandecito englobando todas las redes sociales */
+            #social {
+                
+            }
+
+            /* Primera red social, Whatsapp */
+            .whatsapp {
+                margin: 0px;
+                margin-left: -39px;
+            }
+            /* Imagen de Whatsapp */
+            .waza {
+
+            }
+            /* Segunda red social, Twitter */
+            .twitter {
+                margin: -42px;
+                margin-left: 14px;
+            }
+            /* Imagen de Twitter */
+            .x {
+                
+            }
+            /* Tercera red social, Facebook */
+            .facebook {
+                margin: 7px;
+                margin-left: 55px;
+            }
+            /* Imagen de Facebook */
+            .facebok {
+                
+            }
+            /* Este es el email */
+            .email {
+                margin: -44px;
+                margin-left: 96px;
+            }
+            /* Imagen de email */
+            .mail {
+                margin: 2px;
+                margin-top: 3px;
+            }
+            /* Esto es el menú */
+                #menu {
+                    margin: 0 auto;
+                    margin-top: 5px;
+                    border: 4px solid black;
+                    box-shadow: 0px 0px 10px black;
+                    background-color: rgb(6, 179, 179);
+                    width: 98.1%;
+                    height: 17%;
+                }
+
+                /* Los botones del menú */
+                .botones{
+                    margin-top: 45px;
+                    margin-left: 579px;
+                }
+
+                .buton{
+                    padding: 22px;
+                    margin-left: 30px;
+                }
+            /* "contenido" es el DIV padre que engloba el contenido de la web */
+            /* Esto va después del menú */
+            #contenido {
+                margin: 0 auto;
+                margin-top: 90px;
+
+                margin-top: 96px;
+                background-color: rgb(6, 179, 179);
+                width: 2027.5px;
+                height: 177px;
+
+            }
+
+            /* PARTE IZQUIERDA */
+            #izquierda {
+                margin: 0 auto;
+                margin-top: 90px;
+                height: 300%; /* 356px */
+                border: 4px solid black;
+                box-shadow: 0px 0px 10px black;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="principio">
+            <div class="logo">
+                <img src="imgs/logox.png" width="150" height="150">
+            </div>
+            <div class="encabezado">
+                <h1 id="nombre">FESTIVAL DE VIDEOJUEGOS, LA GAMEPOLIS</h1>
+            </div>
+            <div id="contacto">
+                <p class="contact"><b>CONTACTO:</b></p>
+                <div class="whatsapp">
+                    <a href="https://wa.me/34333333333" title="whatsapp" target="_self"><img class="waza" src="imgs/whatsapp.svg"
+                        width="50" height="50" alt="whatsapp"></a>
+                </div>
+                <div class="twitter">
+                    <a href="https://twitter.com/home?lang=es" title="twitter" target="_self"><img class="x" src="imgs/twitter.svg"
+                        width="34" height="34" alt="twitter"></a>
+                </div>
+                <div class="facebook">
+                    <a href="https://www.facebook.com/?locale=es_ES" title="facebook" target="_self"><img class="facebok"
+                        src="imgs/facebook.png" width="35" height="35" alt="facebook"></a>
+                </div>
+                <div class="email">
+                    <a href="mailto:personal@correo.com?Subject=Inscripci&oacute;n%20en%20%el%20evento%20actual" title="email"
+                        target="_self"><img class="mail" src="imgs/email.png" width="38" height="38" alt="email"></a>
+                </div>
+            </div>
+        </div>
+        <div id="menu">
+            <div class="botones">
+                <button type="button" class="buton" onclick="alert('')">Inicio</button>
+                <button type="button" class="buton" onclick="alert('¡Ejemplo!')">Ver nuestros proyectos</button>
+                <button type="button" class="buton" onclick="alert('¡Ejemplo!')">Curiosidades</button>
+                <button type="button" class="buton" onclick="alert('¡Ejemplo!')">Ver otros eventos en M&aacute;laga</button>
+            </div>
+        </div>
+        <!-- "contenido" es el DIV que engloba todo el contenido de la web -->
+        <div id="contenido">
+            <div id="izquierda">
+                <h2><u>¿CONOCES LA GAMEPOLIS?</u></h2>
+                <p>Os dejamos la ubicaci&oacute;n de donde se suele celebrar en M&aacute;laga.</p>
+                <!-- width=600 y height= 450 -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6397.481853193006!2d-4.459984!3d36.704763!3m2!1i1024!2
+                    i768!4f13.1!3m3!1m2!1s0xd72f75dfac94af9%3A0xad103776103e5ebf!2sFYCMA%20-%20Palacio%20de%20Ferias%20y%20Congresos%20de
+                    %20M%C3%A1laga!5e0!3m2!1ses!2sus!4v1715892235542!5m2!1ses!2sus" width="300" height="200" style="border:0;"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <h2>¿QU&Eacute; ES LA GAMEPOLIS?</h2>
+                <p>Es el festival de videojuegos más grande de Andalucía. Con más de 66.000 visitantes en la edición de 2023, afronta su
+                    décima edición del 21 al 23 de julio en Málaga con el objetivo de acoger en el Palacio de Ferias de Málaga a 70.000
+                    amantes de los videojuegos.
+                </p>
+                <p>La programación de este evento destaca por su amplia variedad de actividades como las diferentes secciones del lugar donde
+                    es posible probar videojuegos gratuitamente y consta de seis componentes principales: la zona competitiva de
+                    ciertos juegos, la zona de conferencias, el espacio de exposición y venta, escenario de conciertos, Zona Indie y espacio
+                    retro.
+                </p>
+                <p><b>Si desea conocer m&aacute;s acerca de este gran evento, proporcionamos el enlace a su web oficial:</b></p>
+                <a href="https://gamepolis.org/" title="gamepolis" target="_blank">GAMEPOLIS</a>
+            <!-- seguir la izquierda -->
+            </div>
+            <div class="derecha">
+                <div class="latest">
+                    <p>¡No te pierdas las &uacute;ltimas noticias sobre este gran festival! seguidlo m&aacute;s de cerca a trav&eacute;s de la
+                        cuenta oficial:
+                    </p>
+                    <a href="https://twitter.com/Gamepolis_org" title="gamepolis" target="_blank">Twitter del festival gaming</a>
+                </div>
+                <div class="publi">
+                    <img src="imgs/marmota.gif" width="150" height="150">
+                </div>
+                <!-- Sobre mí -->
+                <div class="about">
+                    <h3>Sobre m&iacute;</h3>
+                    <p>Soy Alberto, amante de los videojuegos y del cine. Aún recuerdo cuando prob&eacute; por primera vez mi primer juego, es una
+                        experiencia muy reconfortante e inolvidable. ¿Quien no quiso disfrutar de momentos inolvidables y echarse unas partidas con
+                        la familia o con un grupo de amigos sentados o tumbados en el sof&aacute;? si os gusta este mundo, os recomiendo que
+                        vay&aacute;is a este gran evento de Gamepolis, vais a gozarlo, ¡os lo aseguro!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

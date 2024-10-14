@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento onmousemove</title>
+</head>
+<body>
+
+<div id="areaMovimiento" style="width: 300px; height: 200px; border: 1px solid black;">
+    Mueve el ratón dentro de esta caja.
+</div>
+<p id="coordenadas"></p>
+
+<script>
+    document.getElementById("areaMovimiento").onmousemove = function(event) {
+        document.getElementById("coordenadas").innerHTML = 
+            "Posición del ratón: X: " + event.clientX + " Y: " + event.clientY;
+    };
+</script>
+
+</body>
+</html>

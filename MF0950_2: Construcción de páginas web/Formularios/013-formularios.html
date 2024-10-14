@@ -1,0 +1,44 @@
+
+Descripción: Define el nombre del control de formulario. Este nombre se utiliza como clave cuando se envían los datos del formulario al servidor.
+    
+<label for="nombre">Nombre:</label>
+<input type="text" id="nombre" name="nombre">
+
+2. value
+Descripción: Establece el valor inicial del control de formulario. Para los botones, define el texto que aparece en el botón.
+    
+<label for="edad">Edad:</label>
+<input type="number" id="edad" name="edad" value="18">
+
+3. placeholder
+Descripción: Proporciona una pista o indicación al usuario sobre lo que debe ingresar en el campo de texto.
+    
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="ejemplo@dominio.com">
+
+4. required
+Descripción: Indica que el campo de formulario es obligatorio y debe ser completado antes de enviar el formulario.
+    
+<label for="contraseña">Contraseña:</label>
+<input type="password" id="contraseña" name="contraseña" required>
+
+5. readonly
+Descripción: Hace que el campo de formulario sea de solo lectura. El usuario no puede modificar su valor.
+    
+<label for="usuario">Nombre de Usuario:</label>
+<input type="text" id="usuario" name="usuario" value="usuario123" readonly>
+6. disabled
+Descripción: Desactiva el control de formulario, lo que impide que el usuario interactúe con él. Los datos de los controles desactivados no se envían al servidor.
+    
+<label for="telefono">Teléfono:</label>
+<input type="tel" id="telefono" name="telefono" value="123-456-7890" disabled>
+7. maxlength
+Descripción: Establece el número máximo de caracteres que el usuario puede introducir en un campo de texto.
+    
+<label for="codigo">Código Postal:</label>
+<input type="text" id="codigo" name="codigo" maxlength="5">
+8. pattern
+Descripción: Define una expresión regular que el valor del campo de texto debe coincidir para que el formulario se considere válido.
+    
+<label for="telefono">Teléfono:</label>
+<input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">

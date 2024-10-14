@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Positivo Negativo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <p>Tienes que mirar el resultado en la consola del navegador.</p>
+    <script>
+        // Inicio
+
+        // Definir Funcion Factorial(n)
+        function factorial(n) {
+            // Si n = 0 Entonces
+            if (n === 0) {
+                // Retornar 1
+                return 1;
+            }
+            // Sino
+            else {
+                // Retornar n * Factorial(n - 1)
+                return n * factorial(n - 1);
+            }
+            // FinSi
+        }
+        // FinFuncion
+
+        // Leer número
+        let numero = prompt("Introduce un número:");
+
+        // Convertir la entrada a un número
+        numero = Number(numero);
+
+        // Calcular el factorial
+        let resultado = factorial(numero);
+
+        // Imprimir "El factorial de", numero, "es", resultado
+        console.log("El factorial de", numero, "es", resultado);
+
+        // Fin
+    </script>
+</body>
+</html>

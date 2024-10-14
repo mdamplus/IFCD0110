@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Higiene_personal</title>
+		<meta charset = "UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            /* body(contenido de la web) */
+            body {
+                background-image: url("imgs/hygienew.jpg");
+            }
+            /* #DesinfectarseManos es el DIV que engloba encabezado y los dos párrafos del comienzo */
+            #DesinfectarseManos {
+                text-align: center;
+            }
+            /* #desinfemanos es el DIV que engloba al encabezado */
+            #desinfemanos {
+                text-align:center;
+                color: orangered;
+            }
+            /* "infografia" es el DIV padre que engloba todos los DIVS grandes */
+            #infografia{
+                margin: 0 auto;
+                width: 90%;
+            }
+
+            .manis{
+                width: 600px;
+                height: 200px;
+                background: lightskyblue;
+            }
+            /* "n1" es la clase para los dos numeros superiores izquierdos. Usamos 'float: left' para que flote a la
+                izquierda. */
+            .n1{
+                width: 300px;
+                height: 200px;
+                float: left;
+            }
+
+            .n3{
+                background-color: aqua
+            }
+
+            .n4{
+                background-color: aqua
+            }
+
+            .n5{
+                background-color: aqua
+            }
+
+            .n6{
+                background-color: aqua
+            }
+
+            .n7{
+                background-color: aqua;
+            }
+
+            .m7{
+                margin-left: 41px;
+            }
+
+            .m1a{
+                margin-left: 37px;
+                margin-top: -13px;
+            }
+
+            .m1b{
+                margin-left: 39px;
+                margin-top: -15px;
+            }
+
+            .m2{
+                margin-left: 34px;
+                margin-top: -13.3px;
+            }
+
+            .m3{
+                margin-left: 36px;
+            }
+
+            .m4{
+                margin-left: 40px;
+            }
+
+            .m5{
+                margin-left: 40px;
+            }
+
+            .m6{
+                margin-left: 36px;
+            }
+
+            .p1a {
+                background-color: red;
+                width: 20px;
+                margin-top: 0px;
+                padding: 3px;
+                }
+
+            .p1b {
+                background-color: red;
+                width: 20px;
+                margin-top: 0px;
+                padding: 3px;
+            }
+
+            .p2{
+                margin-top: 0px;
+                background-color: red;
+                width: 17px;
+                padding: 2px;
+            }
+
+            .p3{
+                margin-top: 0px;
+                background-color: red;
+                width: 17px;
+                padding: 2px;
+                padding-left: 10px;
+            }
+
+            .p4{
+                background-color: red;
+                width: 20px;
+                padding: 2px;
+                margin-top: 0px;
+            }
+
+            .p5{
+                background-color: red;
+                width: 20px;
+                padding: 2px;
+                margin-top: 0px;
+            }
+
+            .p6{
+                background-color: red;
+                width: 20px;
+                padding: 2px;
+                margin-top: 0px;
+            }
+
+            .p7{
+                background-color: red;
+                width: 20px;
+                padding: 2px;
+                margin-top: 0px;
+            }
+
+            .texto5{
+                margin-left: 18px;
+            }
+
+            .ptxt2{
+                margin-left: 19px;
+                margin-top: -1px;
+                height: 100px;
+                padding-top: 17px;
+            }
+            /* "base manitas" son 2 clases que pertenecen al DIV de la derecha. Usamos 'float: right' para que flote
+                a la derecha */
+            .base.manitas{
+                float: right;
+                margin-top: -200px;
+                background-color: aqua;
+            }
+            /* Tenemos ahora ".base.manitas" como global para el DIV de número 333 de la 'cajita' de la derecha  y el
+                .base para meterle atributos */
+            .base {
+                float: left;
+                background: lightblue;
+                height: 300px;
+                width: 300px;
+            }
+            /* Ahora, tendremos la 'cajita' para el texto de las manitas juntas */
+            .n1txt {
+                width: 600px;
+                height: 100px;
+                float: left;
+                background: lightblue;
+            }
+            /* "media" es la primera parte dividida incluyendo: ambas fotos juntas, la 'caja' derecha y el texto de
+                la primera 'cajita' con ambas manos".|| Contenido" es la segunda y última mitad. NO incluye el 'footer'
+                con los logos */
+            .media, div#contenido {
+                width: 900px;;
+                margin: 0 auto;
+            }
+
+            .texto2{
+                background-color: lightblue;
+                margin-top: 20px;
+                min-height: 3px;
+            }
+
+            /* Finalmente el "footer" */
+            .abajo{/*
+                background-color: red;
+                margin-top: 706px;
+                padding: 1%;
+                width: 862px;
+                margin-left: 597.5px;
+                min-height: 81px;
+                background-color: red;
+                */
+                background-color: red;
+                margin-top: 706px;
+                padding: 1%;
+                width: 864px;
+                margin-left: 468.5px;
+                min-height: 81px;
+            }
+
+            .izq{
+                float:left
+            }
+
+            .der{
+                float:right;
+            }
+
+            .oms{
+                width: 55%;
+                padding-left: 85px;
+                margin-top: -8px;
+            }
+            .arrabal{
+                width: 65%;
+                float: right;
+                padding-right: 83px;
+                margin-top: -1%;
+            }
+
+            .clock{
+                float: left;
+                margin-left: 469px;
+                margin-top: 3px;
+            }
+
+            .reloj{
+                background-color: orange;
+            }
+
+            .encabezado{
+            
+            }
+
+            .proce{
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- hr es una línea separatoria -->
+        <hr style="border:1px solid #9c5e33">
+        <!-- "DesinfectarseManos" es el DIV que engloba todo del comienzo -->
+        <!-- encabezado incluye todo en el comienzo, incluido lo de "duración del procedimiento"-->
+        <div class="encabezado">
+            <div id="DesinfectarseManos">
+                <h1 id="desinfemanos"><u>DESINFECCI&Oacute;N DE MANOS</u></h1>
+                <p>¡Desinf&eacute;ctese las manos por higiente! L&aacute;vese las manos solo cuando
+                    est&eacute;n visiblemente sucias o si está en contacto con una persona enferma.
+                </p>
+            </div>
+            <div class="clock">
+                <img src="imgs/clock.png" width="20" height="20" class="reloj">
+            </div>
+            <div class="tiempo">
+                <p class="proce"><strong>Duraci&oacute;n de todo el procedimiento: 20-30 segundos.</strong></p>
+            </div>
+        </div>
+        <hr style="border: 1px solid #9c5e33">
+        <!-- COMIENZA EL CONTENIDO, "infografia" es el DIV padre donde engloba todos los DIVS grandes -->
+        <div id="infografia">
+        <!-- Aqui puedo o poner 01 entre <div> o usar la imagen con el número, en este caso pongo el numero -->
+        <!-- Voy a dividir por la mitad las 'cajas' y tendremos una clase "media" que incluirá las dos fotos
+            juntas, la 'caja' de la derecha y el texto de las dos fotos juntas aparte en un <div> dentro de "media" -->
+            <div class="media">
+                    <div class="manis">
+                        <div class="n1">
+                            <p class="p1a">1a</p>
+                            <img src="imgs/mano1.png" width="192" height="152" class="m1a" alt="manos">
+                        </div>
+                        <div class="n1">
+                            <p class="p1b">1b</p>
+                            <img src="imgs/mano1b.png" width="192" height="152" class="m1b" alt="manos">
+                        </div>
+                    </div>
+                <!-- 'cajita' derecha: -->
+                <div class="base manitas">
+                    <p class="p2">2</p>
+                    <img src="imgs/mano2.png" width="192" height="152" class="m2" alt="manos">
+                    <div class="texto2">
+                        <p class="ptxt2"><strong>Fr&oacute;tese las palmas de las manos<br>entre s&iacute;.</strong></p>
+                    </div>
+                </div>
+                <!-- 'cajita' de texto de "manis"-->
+                <div class="n1txt">
+                    <p><strong>Deposite en la palma de la mano una dosis de producto suficiente para cubrir todas las superficies.
+                    </strong></p>
+                </div>
+            </div>
+            <!-- Avanzamos, "contenido" es la segunda y última parte. NO incluye el 'footer' con los logos, solo los DIVS o
+                'cajitas'-->
+            <div id="contenido">
+                <div class="base">
+                    <div class="n3">
+                        <p class="p3">3</p>
+                    <img src="imgs/mano3.png" width="192" height="152" class="m3" alt="mano">
+                    </div>
+                    <p><strong>Fr&oacute;tese la palma de la mano derecha<br>contra el dorso de la mano izquierda entrelazando los dedos
+                        y viceversa.</strong>
+                    </p>
+                </div>
+                <div class="base">
+                    <div class="n4">
+                        <p class="p4">4</p>
+                    <img src="imgs/mano4.png" width="192" height="152" class="m4" alt="mano">
+                    </div>
+                    <p><strong>Fr&oacute;tese las palmas de las manos entre s&iacute;, con los dedos entrelazados</strong></p>
+                </div>
+                <div class="base">
+                    <div class="n5">
+                        <p class="p5">5</p>
+                    <img src="imgs/mano5.png" width="192" height="152" class="" alt="mano">
+                    </div>
+                    <p class="texto5"><strong>Fr&oacute;tese el dorso de los dedos de una mano con la palma de la mano opuesta, agarr&aacute;ndose los
+                        dedos.</strong>
+                    </p>
+                </div>
+                <div class="base">
+                    <div class="n6">
+                        <p class="p6">6</p>
+                    <img src="imgs/mano6.png" width="192" height="152" class="m6" alt="mano">
+                    </div>
+                    <p class="texto6"><strong>Fr&oacute;tese con un movimiento de<br>rotaci&oacute;n el pulgar izquierdo y<br>atrap&aacute;ndolo con la
+                        palma de la<br>mano derecha y viceversa.</strong></p>
+                </div>
+                <div class="base">
+                    <div class="n7">
+                        <p class="p7">7</p>
+                    <img src="imgs/mano7.png" width="192" height="152" class="m7" alt="mano">
+                    </div>
+                    <p class="texto6"><strong>Fr&oacute;tese la punta de los dedos de la<br>mano derecha contra la palma de<br>la mano izquierda, haciendo un
+                        <br>movimiento de rotaci&oacute;n y viceversa.
+                    </strong>
+                    </p>
+                </div>
+                <div class="base">
+                    <div class="n6">
+                        <p class="p6">8</p>
+                    <img src="imgs/mano4.png" width="192" height="152" class="m6" alt="mano">
+                    </div>
+                    <p class="texto6"><strong>Una vez secas, sus manos son seguras.</strong></p>
+                </div>
+            </div>
+        </div>
+        <!-- Ahora el logo: -->
+        <div class="abajo">
+            <div class="izq">
+                <img src="imgs/oms_logo.png" width="100" height="100" class="oms" alt="oms">
+            </div>
+            <div class="der">
+                <img src="imgs/arrabal_logo.png" width="95" height="95" class="arrabal" alt="arrabal">
+            </div>
+        </div>
+    </body>
+</html>

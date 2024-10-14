@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Formulario de Carga de Archivo</title>
+</head>
+<body>
+  <h1>Subir Archivo</h1>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <label for="file">Archivo:</label>
+    <input type="file" id="file" name="file">
+    <br>
+    <label for="description">Descripción:</label>
+    <textarea id="description" name="description"></textarea>
+    <br>
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>

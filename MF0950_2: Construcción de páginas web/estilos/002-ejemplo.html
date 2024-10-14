@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificidad CSS</title>
+    <style>
+        /* Selector de etiqueta: 1 punto */
+        p {
+            color: blue;
+        }
+
+        /* Selector de clase: 10 puntos */
+        .highlight {
+            color: green;
+        }
+
+        /* Selector de ID: 100 puntos */
+        #unique {
+            color: red;
+        }
+
+        /* Selector combinado: 101 puntos (100 por ID + 1 por etiqueta) */
+        #unique p {
+            color: purple;
+        }
+
+        /* Selector inline: 1000 puntos */
+        p[style] {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <p>Texto 1</p>
+    <p class="highlight">Texto 2</p>
+    <p id="unique">Texto 3</p>
+    <p id="unique" style="color: orange;">Texto 4</p>
+</body>
+</html>

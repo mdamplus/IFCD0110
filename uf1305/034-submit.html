@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento submit</title>
+</head>
+<body>
+
+<form id="miFormulario">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    <button type="submit">Enviar</button>
+</form>
+
+<script>
+    document.getElementById("miFormulario").addEventListener("submit", function(event) {
+        var nombre = document.getElementById("nombre").value;
+        if (nombre === "") {
+            alert("El campo de nombre está vacío.");
+            event.preventDefault();  // Evita el envío del formulario
+        } else {
+            alert("Formulario enviado correctamente.");
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento blur</title>
+</head>
+<body>
+
+<label for="telefono">Teléfono:</label>
+<input type="text" id="telefono" name="telefono">
+
+<script>
+    var campoTelefono = document.getElementById("telefono");
+
+    campoTelefono.addEventListener("blur", function() {
+        if (campoTelefono.value === "") {
+            alert("El campo de teléfono no puede estar vacío.");
+        }
+    });
+</script>
+
+</body>
+</html>

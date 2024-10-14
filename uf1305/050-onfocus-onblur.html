@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos onfocus y onblur</title>
+</head>
+<body>
+
+<p id="estadoVentana">Estado de la ventana.</p>
+
+<script>
+    window.onfocus = function() {
+        document.getElementById("estadoVentana").innerHTML = "La ventana tiene el foco.";
+    };
+
+    window.onblur = function() {
+        document.getElementById("estadoVentana").innerHTML = "La ventana ha perdido el foco.";
+    };
+</script>
+
+</body>
+</html>

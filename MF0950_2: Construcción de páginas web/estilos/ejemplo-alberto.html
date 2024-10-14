@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>encabezado flexible</title>
+<style>
+	.grid-container {
+		display: grid;
+		grid-template-columns: 1fr 3fr 1fr; /* 1 3 1 */
+		/*gap: 1px; /* Espacio entre columnas */
+	}
+	.grid-item {
+		background-color: lightblue;
+		padding: 20px;
+		text-align: center;
+		border: 1px solid #ccc;
+	}
+
+    .social {
+    display: inline;
+    padding: 5px;
+    background-color: chocolate;
+}
+</style>
+</head>
+<body>
+	<div class="grid-container">
+		<div class="grid-item">logo</div>
+		<div class="grid-item"><h1>Metal Gear Solid Forum</h1></div>
+		<div class="grid-item">
+            <div class="social">X</div>
+            <div class="social">F</div>
+            <div class="social">I</div>
+
+        </div>
+	</div>
+</body>
+</html>
+

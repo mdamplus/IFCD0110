@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de Formulario</title>
+</head>
+<body>
+  <form action="/submit-form" method="post">
+    <fieldset>
+      <legend>Información Personal</legend>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre">
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+    </fieldset>
+
+    <fieldset>
+      <legend>Preferencias</legend>
+      <label for="suscripcion">Suscribirse:</label>
+      <input type="checkbox" id="suscripcion" name="suscripcion">
+      <br>
+      <label for="genero">Género:</label>
+      <input type="radio" id="hombre" name="genero" value="hombre"> Hombre
+      <input type="radio" id="mujer" name="genero" value="mujer"> Mujer
+      <br>
+      <label for="pais">País:</label>
+      <select id="pais" name="pais">
+        <option value="mx">México</option>
+        <option value="us">Estados Unidos</option>
+        <option value="ca">Canadá</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Archivo</legend>
+      <label for="archivo">Subir archivo:</label>
+      <input type="file" id="archivo" name="archivo">
+    </fieldset>
+
+    <fieldset>
+      <legend>Comentarios</legend>
+      <label for="comentarios">Comentarios:</label>
+      <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+    </fieldset>
+
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Reiniciar">
+  </form>
+</body>
+</html>

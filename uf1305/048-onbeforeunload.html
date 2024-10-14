@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento onbeforeunload</title>
+</head>
+<body>
+
+<p>Intenta cerrar o recargar esta página.</p>
+<p><a href="https://google.es">Enlace externo</a></p>
+
+<script>
+    window.onbeforeunload = function(event) {
+        event.preventDefault();
+        event.returnValue = "¿Estás seguro de que deseas abandonar esta página?";
+    };
+</script>
+
+</body>
+</html>

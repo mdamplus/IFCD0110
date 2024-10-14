@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Función Sumar</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <p>Tienes que mirar el resultado en la consola del navegador.</p>
+    <script> 
+            // Inicio Función "Sumar" (a como Entero, b como Entero) retornar Entero
+            function Sumar(a, b) {
+            // Declarar suma como Entero
+            let suma;
+            
+            // Inicio del cuerpo de la función
+            suma = a + b;
+
+            // Retornar suma
+            return suma;
+
+        }
+        // Fin Función
+
+        // Uso de la función
+        // Inicio Programa "UsoDeSumar"
+
+        // Declarar x, y, z como Entero
+        let x, y, z;
+
+        // Asignar valores a las variables
+        x = parseInt(prompt("Introduce un número A:"));
+        y = parseInt(prompt("Introduce un número B:"));
+
+       /* x = Number(prompt("Introduce un número A:"));
+        y = Number(prompt("Introduce un número B:"));*/
+
+        // Llamar a la función Sumar
+        z = Sumar(x, y);
+
+        // Imprimir "La suma de", x, "y", y, "es", z
+        console.log("La suma de", x, "y", y, "es", z);
+
+        // Fin Programa
+    </script>
+</body>
+</html>

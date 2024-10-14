@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #ff9500;
+            color: #4949a0;
+            text-align: center;
+        }
+        #titulo {
+            margin: auto auto;
+            width: 500px;
+            padding: 20px;
+            color: #ff9500;
+            background-color: #4949a0;
+            border-radius: 20px;
+            border:3px solid white;
+        }
+        .tabla {
+            display: flex;
+            width: 78%;
+            margin: auto 11%;
+        }
+        .uno {
+            margin-top: 4%;
+        }
+        .caja {
+            border: 1px solid green;
+            width: 22%;
+            height: 275px;
+            margin-bottom: 4%;
+            background: white;
+        }
+        .btlr {
+            border-top-left-radius: 40%;
+        }
+        .btrr {
+            border-top-right-radius: 40%;
+        }
+        .bblr {
+            border-bottom-left-radius: 40%;
+        }
+        .bbrr {
+            border-bottom-right-radius: 40%;
+        }
+        .margen {
+            margin-left: 4%;
+        }
+        .img {
+            width: 60%;
+            padding-top: 5%;
+        }
+        p {
+            font-size: x-large;
+        }
+        .subtitulo {
+            padding: 25px;
+            color: #ff9500;
+            background-color: white;
+            border-radius: 20px;
+            border:3px solid #4949a0;
+            width: 500px;
+            margin: auto auto;
+        }
+        .foto {
+            height: 100px;
+        }
+        .propuesta {
+            border: 1px solid #4949a0;
+            border-radius: 20px;
+            text-align: center;
+            margin: 2px;
+            background: white;
+            width: 30%;
+        }
+        .medio {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    </style>
+    <title>Riesgos laborales</title>
+</head>
+<body>
+    <h1 id="titulo">Riesgos laborales</h1>
+    <hr/>
+    <!--Riesgos-->
+    <div id="info">
+        <div class="tabla uno">
+            <div class="caja btlr"><img class="img" src="svg/riesgos/cansancio.svg" alt="Cansancio" title="Cansancio"><p>Cansancio</p></div>
+            <div class="caja margen"><img class="img" src="svg/riesgos/caida.svg" alt="Caída" title="Caída"><p>Caídas</p></div>
+            <div class="caja margen"><img class="img" src="svg/riesgos/falta-limpieza.svg" alt="Falta de limpieza" title="Falta de limpieza"><p>Falta de limpieza/orden</p></div>
+            <div class="caja margen btrr"><img class="img" src="svg/riesgos/golpes-materiales.svg" alt="Golpes con materiales" title="Golpes con materiales"><p>Golpes con materiales</p></div>
+        </div>
+        <div class="tabla">
+            <div class="caja bblr"><img class="img" src="svg/riesgos/riesgo-electrico.svg" alt="Riesgo eléctrico" title="Riesgos eléctrico"><p>Riesgos eléctricos</p></div>
+            <div class="caja margen"><img class="img" src="svg/riesgos/sobreesfuerzo.svg" alt="Sobreesfuerzo" title="Sobreesfuerzo"><p>Sobreesfuerzos</p></div>
+            <div class="caja margen"><img class="img" src="svg/riesgos/insolacion.svg" alt="Insolación" title="Insolación"><p>Insolación y deshidratación</p></div>
+            <div class="caja margen bbrr"><img class="img" src="svg/riesgos/atropello.svg" alt="Atropello" title="Atropello"><p>Atropellos</p></div>
+        </div>
+    </div>
+    <hr>
+    <!--Precauciones parte 1-->
+    <div>
+        <h2 class="subtitulo">Medidas preventivas</h2>
+    </div>
+    <br>
+    <div class="tabla">
+        <div class="propuesta">
+            <p>Buena planificación de las fases de obra, secuenciando la entrada y concurrencia de empresas y trabajadores.</p>
+        </div>
+        <div class="propuesta medio">
+            <p>Reuniones de control y seguimiento del avance de la obra.</p>
+        </div>
+        <div class="propuesta">
+            <p>Inspecciones, visitas, Auditorías y Observaciones de Seguridad</p>
+        </div>
+    </div>
+    <hr>
+    <!--precauciones parte 2-->
+    <div>
+        <h2 class="subtitulo">Formación e información</h2>
+    </div>
+    <br>
+    <div class="tabla">
+        <div class="propuesta">
+            <p>Plan de Seguridad y Salud de la obra</p>
+        </div>
+        <div class="propuesta medio">
+            <p>Uso de Maquinaria</p>
+        </div>
+        <div class="propuesta">
+            <p>Uso Herramientas</p>
+        </div>
+    </div>
+</body>
+</html>

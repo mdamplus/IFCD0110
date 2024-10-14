@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento reset</title>
+</head>
+<body>
+
+<form id="miFormulario">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre">
+    <button type="submit">Enviar</button>
+    <button type="reset">Restablecer</button>
+</form>
+
+<script>
+    document.getElementById("miFormulario").addEventListener("reset", function() {
+     alert("Formulario restablecido.");
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú 002</title>
+    <style>
+        nav {
+            margin-top: 30px;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            position: relative;
+        }
+
+        nav li ul {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 100%;
+            
+            padding: 0; /* Eliminamos el relleno del submenú */
+        }
+
+        nav li:hover ul {
+            display: block;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: grey;
+            font-weight: bold;
+            padding: 20px;
+            display: block;
+            white-space: nowrap;
+            border-bottom: 2px solid rgb(79, 221, 23);
+            background-color: lightgrey;
+        }
+
+        nav a:hover {
+            color: white;
+            background-color: skyblue;
+            border-bottom: 2px solid #007bff;
+        }
+
+        li > a.submenu {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" target="" title="Inicio">Inicio</a></li>
+            <li><a href="#" target="" title="Quiénes Somos">Quiénes Somos</a></li>
+            <li><a href="#" target="" title="Servicios">Servicios</a>
+                <ul>
+                    <li><a class="submenu" href="#">Servicio tecnico 1</a></li>
+                    <li><a class="submenu" href="#">Servicio especifico 2</a></li>
+                    <li><a class="submenu" href="#">Servicio a domicilio 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#" target="" title="Dónde Estamos">Dónde Estamos</a></li>
+            <li><a href="#" target="" title="Contactar">Contactar</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
